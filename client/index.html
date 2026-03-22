@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Мои Задачи</h1>
+            <p class="subtitle">Управляйте своими задачами легко и просто</p>
+        </header>
+
+        <div class="todo-form">
+            <form id="todoForm">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="Введите новую задачу..." 
+                    required
+                    autocomplete="off"
+                >
+                <button type="submit" id="addBtn">
+                    <span>Добавить</span>
+                </button>
+            </form>
+        </div>
+
+        <div class="todo-stats">
+            <div class="stat">
+                <span class="stat-label">Всего:</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Выполнено:</span>
+                <span class="stat-value" id="completedCount">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Осталось:</span>
+                <span class="stat-value" id="remainingCount">0</span>
+            </div>
+        </div>
+
+        <div class="todo-list" id="todoList">
+            <div class="loading" id="loading">Загрузка...</div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
