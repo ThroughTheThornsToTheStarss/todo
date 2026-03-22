@@ -1,3 +1,4 @@
+<img width="1920" height="997" alt="image" src="https://github.com/user-attachments/assets/18022457-9aae-4d00-8633-21fea94e1de3" />
 # Todo List Application
 
 Полнофункциональное приложение для управления задачами с фронтендом и бэкендом на Go.
